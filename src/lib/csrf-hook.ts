@@ -1,6 +1,5 @@
-import type { Handle } from "@sveltejs/kit";
 import { createRejectionResponse } from "./response.js";
-import type { CsrfHookFactory, SecFetchSiteValue } from "./types.js";
+import type { CsrfHookFactory, Handle, SecFetchSiteValue } from "./types.js";
 import {
   isPathExcluded,
   isPathProtected,

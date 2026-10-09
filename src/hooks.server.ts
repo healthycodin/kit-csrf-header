@@ -1,5 +1,5 @@
 import { sequence } from '@sveltejs/kit/hooks';
-import { csrfProtection } from '$lib/index.js';
+import { csrfProtection } from './lib/index.js';
 
 /**
  * Example CSRF protection configuration
