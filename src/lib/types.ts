@@ -1,4 +1,8 @@
-import type { Handle, RequestEvent } from "@sveltejs/kit";
+import type { RequestEvent } from "@sveltejs/kit";
+import type { sequence } from "@sveltejs/kit/hooks";
+
+// Derived from `sequence` because `Handle` is exported from different modules in Kit 2 and Kit 3.
+export type Handle = Parameters<typeof sequence>[0];
 
 /**
  * Sec-Fetch-Site header values as defined by the Fetch Metadata spec
